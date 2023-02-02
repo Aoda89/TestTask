@@ -2,12 +2,14 @@ package main
 
 import (
 	"TestTask/operation"
+	"log"
+	"os"
 )
 
 func main() {
-	//	args := os.Args
-	//	if len(args) == 1 {
-	//		log.Fatal("Отсутствуют аргумены")
-	//	}
-	operation.OpenFile("test2.csv") // args[1]
+	args := os.Args
+	if len(args) == 1 {
+		log.Fatal("Отсутствуют аргумены")
+	}
+	operation.OpenFile(args[1])
 }

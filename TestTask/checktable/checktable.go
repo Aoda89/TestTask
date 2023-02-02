@@ -188,7 +188,7 @@ func CheckingUniqueElementsNumbers(array [][]string) {
 		unique[w] = true
 	}
 	if len(checkArray) != len(unique) {
-		log.Fatal("В первой строке имеются одинаковые значения")
+		log.Fatal("В первом столбце имеются одинаковые значения")
 	}
 }
 
